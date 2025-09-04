@@ -1,3 +1,4 @@
+package aula1;
 import java.util.Date;
 
 public class ProdutoPerecivel extends Produto {

@@ -1,3 +1,4 @@
+package aula1;
 public class Produto {
     private String nome;
     private int quantidade;
