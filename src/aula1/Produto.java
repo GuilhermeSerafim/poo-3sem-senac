@@ -1,0 +1,59 @@
+public class Produto {
+    private String nome;
+    private int quantidade;
+    private double precoUnitario;
+    private int codigoDeBarra;
+
+    public Produto(String nome, int quantidade, double precoUnitario, int codigoDeBarra) {
+        this.nome = nome;
+        this.quantidade = quantidade;
+        this.precoUnitario = precoUnitario;
+        this.codigoDeBarra = codigoDeBarra;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
+    }
+
+    public double getPrecoUnitario() {
+        return precoUnitario;
+    }
+
+    public void setPrecoUnitario(double precoUnitario) {
+        this.precoUnitario = precoUnitario;
+    }
+
+    public int getCodigoDeBarra() {
+        return codigoDeBarra;
+    }
+
+    public void setCodigoDeBarra(int codigoDeBarra) {
+        this.codigoDeBarra = codigoDeBarra;
+    }
+
+    @Override
+    public String toString() {
+        return "Produto [nome=" + nome + ", quantidade=" + quantidade + ", precoUnitario=" + precoUnitario
+                + ", codigoDeBarra=" + codigoDeBarra + "]";
+    }
+
+    public double getPreco() {
+        return this.precoUnitario * this.quantidade;
+    }
+
+    public void fazCompra() {
+        System.out.println(this.quantidade + " " + this.nome + "por R$ " + this.getPreco());
+    }
+}
