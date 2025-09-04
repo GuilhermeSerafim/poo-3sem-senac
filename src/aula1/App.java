@@ -1,3 +1,4 @@
+package aula1;
 public class App {
     public static void main(String[] args) throws Exception {
         Produto p1 = new Produto("Banana", 1, 0.80, 2332);
