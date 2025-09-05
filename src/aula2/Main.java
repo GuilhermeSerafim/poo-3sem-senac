@@ -9,6 +9,6 @@ public class Main {
             animal,
             animal2
         };
-        c.fazOrcamento(animais, true);        
+        c.fazOrcamento(animais, true);          
     }
 }

@@ -17,6 +17,8 @@ public class Clinica {
             System.out.println("Exame: R$" + valorDoExame);
             valorTotal += valorDoExame;
         }
+
+        System.out.println("Valor total: " + valorTotal);
     }
 
     public void fazOrcamento(Animal animal) {
